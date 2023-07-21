@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.my-swal-container {
+    margin: 0rem 3rem 0rem 0rem !important;
+}
+
+.customFont {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Heading font */
+.heading {
+    font-family: 'Carter One', cursive;
+}
+
+/* Scrollbar */
+/* Scrollbar */
+@layer utilities {
+    .scrollbar-medium::-webkit-scrollbar {
+        height: 7px;
+        width: 7px;
+        border-radius: 100%
+    }
+
+    .rounded-scrollbar::-webkit-scrollbar-thumb {
+        border-radius: 9999px;
+    }
+}
+
+/* FOr removing input arrows */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    display: none;
+}
+
+
+
+/* Dropdown */
+.dropdown_animation {
+    animation: rotateMenu 400ms ease-in-out forwards;
+    transform-origin: top center
+}
+
+@keyframes rotateMenu {
+    0% {
+        transform: rotateX(-90deg)
+    }
+
+    70% {
+        transform: rotateX(20deg)
+    }
+
+    100% {
+        transform: rotateX(0deg)
+    }
+}

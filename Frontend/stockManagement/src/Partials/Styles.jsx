@@ -1,0 +1,1 @@
+export const primaryButton = "px-5 text-sm h-9 bg-primary hover:bg-secondary text-white  rounded-sm whitespace-nowrap"
